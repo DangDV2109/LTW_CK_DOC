@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 829.01 1033.6" width="829.01" height="1033.6" style="--bg:#18181B;--fg:#F4F4F5;--line:#71717A;--muted:#A1A1AA;--surface:#27272A;--border:#3F3F46;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Repo" data-to="Client" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="251.63899999999992,762.1999999999999 269.63899999999995,762.1999999999999 269.63899999999995,271.3999999999999 287.639,271.3999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Repo" data-to="Server" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="251.63899999999992,762.1999999999999 269.63899999999995,762.1999999999999 269.63899999999995,762.1999999999999 287.639,762.1999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Repo" data-to="Readme" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="251.63899999999992,762.1999999999999 269.63899999999995,762.1999999999999 269.63899999999995,843.9999999999999 287.639,843.9999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Client" data-to="C_Comp" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="462.228,271.3999999999999 474.22800000000007,271.3999999999999 474.22800000000007,66.9 486.22800000000007,66.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Client" data-to="C_Pages" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="462.228,271.3999999999999 474.22800000000007,271.3999999999999 474.22800000000007,148.7 486.2280000000002,148.7" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Client" data-to="C_Routes" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="462.228,271.3999999999999 474.22800000000007,271.3999999999999 474.22800000000007,230.49999999999997 486.22800000000007,230.49999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Client" data-to="C_State" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="462.228,271.3999999999999 474.22800000000007,271.3999999999999 474.22800000000007,312.29999999999995 486.22800000000007,312.29999999999995" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Client" data-to="C_Hooks" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="462.228,271.3999999999999 474.22800000000007,271.3999999999999 474.22800000000007,394.0999999999999 486.22800000000007,394.0999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Client" data-to="C_Services" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="462.228,271.3999999999999 474.22800000000007,271.3999999999999 474.22800000000007,475.89999999999986 486.22800000000007,475.89999999999986" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Server" data-to="S_Config" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="500.76,762.1999999999999 524.76,762.1999999999999 524.76,557.6999999999999 548.76,557.6999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Server" data-to="S_Models" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="500.76,762.1999999999999 524.76,762.1999999999999 524.76,639.4999999999999 548.76,639.4999999999999" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Server" data-to="S_Routes" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="500.76,762.1999999999999 524.76,762.1999999999999 524.76,721.2999999999998 548.76,721.2999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Server" data-to="S_Ctrl" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="500.76,762.1999999999999 524.76,762.1999999999999 524.76,803.0999999999998 548.76,803.0999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Server" data-to="S_Mid" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="500.76,762.1999999999999 524.76,762.1999999999999 524.76,884.8999999999997 548.76,884.8999999999997" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Server" data-to="S_Seed" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="500.76,762.1999999999999 524.76,762.1999999999999 524.76,966.6999999999998 548.76,966.6999999999998" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="Repo" data-label="📁 &lt;MãNhóm&gt;_LTW_CuoiKy
+(Root Repository)" data-shape="rectangle">
+  <rect x="40" y="735.3" width="211.63899999999992" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="145.81949999999995" y="762.1999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="145.81949999999995" dy="-3.9000000000000012">📁 &lt;MãNhóm&gt;_LTW_CuoiKy</tspan><tspan x="145.81949999999995" dy="16.900000000000002">(Root Repository)</tspan></text>
+</g>
+<g class="node" data-id="Client" data-label="📁 client/
+(React + Vite Frontend)" data-shape="rectangle">
+  <rect x="287.639" y="244.49999999999994" width="174.589" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="374.9335" y="271.3999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="374.9335" dy="-3.9000000000000012">📁 client/</tspan><tspan x="374.9335" dy="16.900000000000002">(React + Vite Frontend)</tspan></text>
+</g>
+<g class="node" data-id="Server" data-label="📁 server/
+(Node.js + Express Backend)" data-shape="rectangle">
+  <rect x="287.639" y="735.3" width="213.12099999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="394.1995" y="762.1999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="394.1995" dy="-3.9000000000000012">📁 server/</tspan><tspan x="394.1995" dy="16.900000000000002">(Node.js + Express Backend)</tspan></text>
+</g>
+<g class="node" data-id="Readme" data-label="📄 README.md
+(Hướng dẫn &amp; Tài khoản Demo)" data-shape="rectangle">
+  <rect x="287.639" y="817.0999999999999" width="217.56699999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="396.4225" y="843.9999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="396.4225" dy="-3.9000000000000012">📄 README.md</tspan><tspan x="396.4225" dy="16.900000000000002">(Hướng dẫn &amp; Tài khoản Demo)</tspan></text>
+</g>
+<g class="node" data-id="C_Comp" data-label="📁 src/components/
+(&gt;= 15 Reusable Components)" data-shape="rectangle">
+  <rect x="486.22800000000007" y="40" width="210.15699999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="591.3065" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="591.3065" dy="-3.9000000000000012">📁 src/components/</tspan><tspan x="591.3065" dy="16.900000000000002">(&gt;= 15 Reusable Components)</tspan></text>
+</g>
+<g class="node" data-id="C_Pages" data-label="📁 src/pages/
+(Views theo từng Route)" data-shape="rectangle">
+  <rect x="486.2280000000002" y="121.79999999999998" width="176.07099999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="574.2635000000001" y="148.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="574.2635000000001" dy="-3.9000000000000012">📁 src/pages/</tspan><tspan x="574.2635000000001" dy="16.900000000000002">(Views theo từng Route)</tspan></text>
+</g>
+<g class="node" data-id="C_Routes" data-label="📁 src/routes/
+(AppRoutes, ProtectedRoute)" data-shape="rectangle">
+  <rect x="486.22800000000007" y="203.59999999999997" width="211.639" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="592.0475000000001" y="230.49999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="592.0475000000001" dy="-3.9000000000000012">📁 src/routes/</tspan><tspan x="592.0475000000001" dy="16.900000000000002">(AppRoutes, ProtectedRoute)</tspan></text>
+</g>
+<g class="node" data-id="C_State" data-label="📁 src/context/ &amp; src/store/
+(Context API + Redux Toolkit)" data-shape="rectangle">
+  <rect x="486.22800000000007" y="285.4" width="209.41599999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="590.936" y="312.29999999999995" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="590.936" dy="-3.9000000000000012">📁 src/context/ &amp; src/store/</tspan><tspan x="590.936" dy="16.900000000000002">(Context API + Redux Toolkit)</tspan></text>
+</g>
+<g class="node" data-id="C_Hooks" data-label="📁 src/hooks/
+(useDebounce, useFetch, useLocalStorage)" data-shape="rectangle">
+  <rect x="486.22800000000007" y="367.19999999999993" width="302.7819999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="637.619" y="394.0999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="637.619" dy="-3.9000000000000012">📁 src/hooks/</tspan><tspan x="637.619" dy="16.900000000000002">(useDebounce, useFetch, useLocalStorage)</tspan></text>
+</g>
+<g class="node" data-id="C_Services" data-label="📁 src/services/
+(API Call với async/await)" data-shape="rectangle">
+  <rect x="486.22800000000007" y="448.9999999999999" width="187.18599999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="579.821" y="475.89999999999986" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="579.821" dy="-3.9000000000000012">📁 src/services/</tspan><tspan x="579.821" dy="16.900000000000002">(API Call với async/await)</tspan></text>
+</g>
+<g class="node" data-id="S_Config" data-label="📁 src/config/ &amp; .env
+(MongoDB URI &amp; JWT Secret)" data-shape="rectangle">
+  <rect x="548.76" y="530.8" width="213.86199999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="655.691" y="557.6999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="655.691" dy="-3.9000000000000012">📁 src/config/ &amp; .env</tspan><tspan x="655.691" dy="16.900000000000002">(MongoDB URI &amp; JWT Secret)</tspan></text>
+</g>
+<g class="node" data-id="S_Models" data-label="📁 src/models/
+(5 Mongoose Collections)" data-shape="rectangle">
+  <rect x="548.76" y="612.5999999999999" width="189.40899999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="643.4644999999999" y="639.4999999999999" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="643.4644999999999" dy="-3.9000000000000012">📁 src/models/</tspan><tspan x="643.4644999999999" dy="16.900000000000002">(5 Mongoose Collections)</tspan></text>
+</g>
+<g class="node" data-id="S_Routes" data-label="📁 src/routes/
+(RESTful Plural Endpoints)" data-shape="rectangle">
+  <rect x="548.76" y="694.3999999999999" width="197.55999999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="647.54" y="721.2999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="647.54" dy="-3.9000000000000012">📁 src/routes/</tspan><tspan x="647.54" dy="16.900000000000002">(RESTful Plural Endpoints)</tspan></text>
+</g>
+<g class="node" data-id="S_Ctrl" data-label="📁 src/controllers/
+(Business Logic &amp; Aggregation)" data-shape="rectangle">
+  <rect x="548.76" y="776.1999999999998" width="226.459" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="661.9895" y="803.0999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="661.9895" dy="-3.9000000000000012">📁 src/controllers/</tspan><tspan x="661.9895" dy="16.900000000000002">(Business Logic &amp; Aggregation)</tspan></text>
+</g>
+<g class="node" data-id="S_Mid" data-label="📁 src/middlewares/
+(JWT Auth, Role, Validate, Error)" data-shape="rectangle">
+  <rect x="548.76" y="857.9999999999998" width="230.90499999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="664.2125" y="884.8999999999997" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="664.2125" dy="-3.9000000000000012">📁 src/middlewares/</tspan><tspan x="664.2125" dy="16.900000000000002">(JWT Auth, Role, Validate, Error)</tspan></text>
+</g>
+<g class="node" data-id="S_Seed" data-label="📁 src/seeds/seed.js
+(Tạo dữ liệu mẫu tự động)" data-shape="rectangle">
+  <rect x="548.76" y="939.7999999999998" width="183.481" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="640.5005" y="966.6999999999998" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="640.5005" dy="-3.9000000000000012">📁 src/seeds/seed.js</tspan><tspan x="640.5005" dy="16.900000000000002">(Tạo dữ liệu mẫu tự động)</tspan></text>
+</g>
+</svg>

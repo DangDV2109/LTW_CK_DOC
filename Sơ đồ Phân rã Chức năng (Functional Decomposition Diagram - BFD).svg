@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4454.867 325.40000000000003" width="4454.867" height="325.40000000000003" style="--bg:#18181B;--fg:#F4F4F5;--line:#71717A;--muted:#A1A1AA;--surface:#27272A;--border:#3F3F46;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<polyline class="edge" data-from="Root" data-to="Mod1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2045.3185999999996,93.80000000000001 2045.3185999999996,108.80000000000001 472.1182500000002,108.80000000000001 472.1182500000002,123.80000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Root" data-to="Mod2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2045.3185999999996,93.80000000000001 2045.3185999999996,108.80000000000001 1472.1702500000001,108.80000000000001 1472.1702500000001,123.80000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Root" data-to="Mod3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2045.3185999999996,93.80000000000001 2045.3185999999996,108.80000000000001 2717.455999999999,108.80000000000001 2717.455999999999,123.80000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Root" data-to="Mod4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2045.3185999999996,93.80000000000001 2045.3185999999996,108.80000000000001 3855.8524999999995,108.80000000000001 3855.8524999999995,123.80000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod1" data-to="F1_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="472.1182500000002,177.60000000000002 472.1182500000002,195.60000000000002 133.22249999999997,195.60000000000002 133.22249999999997,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod1" data-to="F1_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="472.1182500000002,177.60000000000002 472.1182500000002,195.60000000000002 348.0380000000001,195.60000000000002 348.0380000000001,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod1" data-to="F1_3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="472.1182500000002,177.60000000000002 472.1182500000002,195.60000000000002 596.1985000000003,195.60000000000002 596.1985000000003,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod1" data-to="F1_4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="472.1182500000002,177.60000000000002 472.1182500000002,195.60000000000002 875.4810000000001,195.60000000000002 875.4810000000001,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod2" data-to="F2_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1472.1702500000001,177.60000000000002 1472.1702500000001,195.60000000000002 1129.5694999999998,195.60000000000002 1129.5694999999998,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod2" data-to="F2_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1472.1702500000001,177.60000000000002 1472.1702500000001,195.60000000000002 1356.6114999999998,195.60000000000002 1356.6114999999998,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod2" data-to="F2_3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1472.1702500000001,177.60000000000002 1472.1702500000001,195.60000000000002 1587.7289999999998,195.60000000000002 1587.7289999999998,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod2" data-to="F2_4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1472.1702500000001,177.60000000000002 1472.1702500000001,195.60000000000002 1858.1194999999998,195.60000000000002 1858.1194999999998,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod3" data-to="F3_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2717.455999999999,177.60000000000002 2717.455999999999,195.60000000000002 2157.7794999999996,195.60000000000002 2157.7794999999996,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod3" data-to="F3_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2717.455999999999,177.60000000000002 2717.455999999999,195.60000000000002 2444.1014999999998,195.60000000000002 2444.1014999999998,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod3" data-to="F3_3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2717.455999999999,177.60000000000002 2717.455999999999,195.60000000000002 2717.455999999999,195.60000000000002 2717.455999999999,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod3" data-to="F3_4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2717.455999999999,177.60000000000002 2717.455999999999,195.60000000000002 2982.6594999999993,195.60000000000002 2982.6594999999993,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod3" data-to="F3_5" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="2717.455999999999,177.60000000000002 2717.455999999999,195.60000000000002 3239.7119999999995,195.60000000000002 3239.7119999999995,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod4" data-to="F4_1" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="3855.8524999999995,177.60000000000002 3855.8524999999995,195.60000000000002 3477.8689999999992,195.60000000000002 3477.8689999999992,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod4" data-to="F4_2" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="3855.8524999999995,177.60000000000002 3855.8524999999995,195.60000000000002 3718.9899999999993,195.60000000000002 3718.9899999999993,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod4" data-to="F4_3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="3855.8524999999995,177.60000000000002 3855.8524999999995,195.60000000000002 3992.7149999999997,195.60000000000002 3992.7149999999997,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Mod4" data-to="F4_4" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="3855.8524999999995,177.60000000000002 3855.8524999999995,195.60000000000002 4282.371499999999,195.60000000000002 4282.371499999999,213.60000000000002" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="Root" data-label="HỆ THỐNG ĐẶT VÉ XEM PHIM
+PTIT CINE" data-shape="rectangle">
+  <rect x="1938.7580999999996" y="40" width="213.12099999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2045.3185999999996" y="66.9" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2045.3185999999996" dy="-3.9000000000000012">HỆ THỐNG ĐẶT VÉ XEM PHIM</tspan><tspan x="2045.3185999999996" dy="16.900000000000002">PTIT CINE</tspan></text>
+</g>
+<g class="node" data-id="Mod1" data-label="1. Phân hệ Xác thực
+&amp; Người dùng" data-shape="rectangle">
+  <rect x="396.30925000000025" y="123.80000000000001" width="151.618" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="472.1182500000002" y="150.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="472.1182500000002" dy="-3.9000000000000012">1. Phân hệ Xác thực</tspan><tspan x="472.1182500000002" dy="16.900000000000002">&amp; Người dùng</tspan></text>
+</g>
+<g class="node" data-id="Mod2" data-label="2. Phân hệ Tra cứu
+&amp; Lịch chiếu (Khách)" data-shape="rectangle">
+  <rect x="1389.32175" y="123.80000000000001" width="165.697" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1472.1702500000001" y="150.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1472.1702500000001" dy="-3.9000000000000012">2. Phân hệ Tra cứu</tspan><tspan x="1472.1702500000001" dy="16.900000000000002">&amp; Lịch chiếu (Khách)</tspan></text>
+</g>
+<g class="node" data-id="Mod3" data-label="3. Phân hệ Đặt vé
+&amp; Quản lý vé (Thành viên)" data-shape="rectangle">
+  <rect x="2623.4924999999994" y="123.80000000000001" width="187.92699999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2717.455999999999" y="150.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2717.455999999999" dy="-3.9000000000000012">3. Phân hệ Đặt vé</tspan><tspan x="2717.455999999999" dy="16.900000000000002">&amp; Quản lý vé (Thành viên)</tspan></text>
+</g>
+<g class="node" data-id="Mod4" data-label="4. Phân hệ Quản trị
+&amp; Thống kê (Admin)" data-shape="rectangle">
+  <rect x="3778.5614999999993" y="123.80000000000001" width="154.582" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3855.8524999999995" y="150.70000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="3855.8524999999995" dy="-3.9000000000000012">4. Phân hệ Quản trị</tspan><tspan x="3855.8524999999995" dy="16.900000000000002">&amp; Thống kê (Admin)</tspan></text>
+</g>
+<g class="node" data-id="F1_1" data-label="1.1. Đăng ký tài khoản
+(Mã hóa mật khẩu bcrypt)" data-shape="rectangle">
+  <rect x="40" y="213.60000000000002" width="186.44499999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="133.22249999999997" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="133.22249999999997" dy="-3.9000000000000012">1.1. Đăng ký tài khoản</tspan><tspan x="133.22249999999997" dy="16.900000000000002">(Mã hóa mật khẩu bcrypt)</tspan></text>
+</g>
+<g class="node" data-id="F1_2" data-label="1.2. Đăng nhập / Đăng xuất
+(Cấp JWT có thời hạn)" data-shape="rectangle">
+  <rect x="254.44500000000016" y="213.60000000000002" width="187.18599999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="348.0380000000001" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="348.0380000000001" dy="-3.9000000000000012">1.2. Đăng nhập / Đăng xuất</tspan><tspan x="348.0380000000001" dy="16.900000000000002">(Cấp JWT có thời hạn)</tspan></text>
+</g>
+<g class="node" data-id="F1_3" data-label="1.3. Phân quyền truy cập
+(Middleware Role &amp; Protected Route)" data-shape="rectangle">
+  <rect x="469.6310000000003" y="213.60000000000002" width="253.13499999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="596.1985000000003" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="596.1985000000003" dy="-3.9000000000000012">1.3. Phân quyền truy cập</tspan><tspan x="596.1985000000003" dy="16.900000000000002">(Middleware Role &amp; Protected Route)</tspan></text>
+</g>
+<g class="node" data-id="F1_4" data-label="1.4. Giao diện Sáng / Tối
+(ThemeContext + useLocalStorage)" data-shape="rectangle">
+  <rect x="750.7660000000001" y="213.60000000000002" width="249.42999999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="875.4810000000001" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="875.4810000000001" dy="-3.9000000000000012">1.4. Giao diện Sáng / Tối</tspan><tspan x="875.4810000000001" dy="16.900000000000002">(ThemeContext + useLocalStorage)</tspan></text>
+</g>
+<g class="node" data-id="F2_1" data-label="2.1. Hiển thị phim Đang chiếu
+&amp; Sắp chiếu (Slide 1 &amp; 2)" data-shape="rectangle">
+  <rect x="1028.196" y="213.60000000000002" width="202.74699999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1129.5694999999998" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1129.5694999999998" dy="-3.9000000000000012">2.1. Hiển thị phim Đang chiếu</tspan><tspan x="1129.5694999999998" dy="16.900000000000002">&amp; Sắp chiếu (Slide 1 &amp; 2)</tspan></text>
+</g>
+<g class="node" data-id="F2_2" data-label="2.2. Tìm kiếm phim theo tên
+(useDebounce + $regex)" data-shape="rectangle">
+  <rect x="1258.9429999999998" y="213.60000000000002" width="195.33699999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1356.6114999999998" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1356.6114999999998" dy="-3.9000000000000012">2.2. Tìm kiếm phim theo tên</tspan><tspan x="1356.6114999999998" dy="16.900000000000002">(useDebounce + $regex)</tspan></text>
+</g>
+<g class="node" data-id="F2_3" data-label="2.3. Lọc theo thể loại, cụm rạp
+&amp; ngày chiếu (Slide 3)" data-shape="rectangle">
+  <rect x="1482.2799999999997" y="213.60000000000002" width="210.898" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1587.7289999999998" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1587.7289999999998" dy="-3.9000000000000012">2.3. Lọc theo thể loại, cụm rạp</tspan><tspan x="1587.7289999999998" dy="16.900000000000002">&amp; ngày chiếu (Slide 3)</tspan></text>
+</g>
+<g class="node" data-id="F2_4" data-label="2.4. Xem chi tiết phim
+(Trailer YouTube, thời lượng, suất chiếu)" data-shape="rectangle">
+  <rect x="1721.1779999999999" y="213.60000000000002" width="273.8829999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1858.1194999999998" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1858.1194999999998" dy="-3.9000000000000012">2.4. Xem chi tiết phim</tspan><tspan x="1858.1194999999998" dy="16.900000000000002">(Trailer YouTube, thời lượng, suất chiếu)</tspan></text>
+</g>
+<g class="node" data-id="F3_1" data-label="3.1. Sinh sơ đồ ghế động từ dữ liệu phòng
+(Ghế thường, VIP, Đã bán)" data-shape="rectangle">
+  <rect x="2023.0609999999997" y="213.60000000000002" width="269.43699999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2157.7794999999996" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2157.7794999999996" dy="-3.9000000000000012">3.1. Sinh sơ đồ ghế động từ dữ liệu phòng</tspan><tspan x="2157.7794999999996" dy="16.900000000000002">(Ghế thường, VIP, Đã bán)</tspan></text>
+</g>
+<g class="node" data-id="F3_2" data-label="3.2. Chọn ghế (Tối đa 8 ghế - Redux)
+&amp; Tính tổng tiền (useMemo)" data-shape="rectangle">
+  <rect x="2320.4979999999996" y="213.60000000000002" width="247.207" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2444.1014999999998" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2444.1014999999998" dy="-3.9000000000000012">3.2. Chọn ghế (Tối đa 8 ghế - Redux)</tspan><tspan x="2444.1014999999998" dy="16.900000000000002">&amp; Tính tổng tiền (useMemo)</tspan></text>
+</g>
+<g class="node" data-id="F3_3" data-label="3.3. Đồng hồ đếm ngược 5 phút
+(Hết giờ tự hủy chọn &amp; useNavigate)" data-shape="rectangle">
+  <rect x="2595.7049999999995" y="213.60000000000002" width="243.50199999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2717.455999999999" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2717.455999999999" dy="-3.9000000000000012">3.3. Đồng hồ đếm ngược 5 phút</tspan><tspan x="2717.455999999999" dy="16.900000000000002">(Hết giờ tự hủy chọn &amp; useNavigate)</tspan></text>
+</g>
+<g class="node" data-id="F3_4" data-label="3.4. Xác nhận đặt vé
+(Server chặn trùng ghế - mã 409)" data-shape="rectangle">
+  <rect x="2867.2069999999994" y="213.60000000000002" width="230.905" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="2982.6594999999993" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="2982.6594999999993" dy="-3.9000000000000012">3.4. Xác nhận đặt vé</tspan><tspan x="2982.6594999999993" dy="16.900000000000002">(Server chặn trùng ghế - mã 409)</tspan></text>
+</g>
+<g class="node" data-id="F3_5" data-label="3.5. Xem lịch sử vé &amp; Hủy vé
+(Trước giờ chiếu tối thiểu 2 tiếng)" data-shape="rectangle">
+  <rect x="3126.1119999999996" y="213.60000000000002" width="227.19999999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3239.7119999999995" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="3239.7119999999995" dy="-3.9000000000000012">3.5. Xem lịch sử vé &amp; Hủy vé</tspan><tspan x="3239.7119999999995" dy="16.900000000000002">(Trước giờ chiếu tối thiểu 2 tiếng)</tspan></text>
+</g>
+<g class="node" data-id="F4_1" data-label="4.1. Quản lý Phim (CRUD)
+(Thêm, cập nhật, xóa phim)" data-shape="rectangle">
+  <rect x="3381.3119999999994" y="213.60000000000002" width="193.114" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3477.8689999999992" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="3477.8689999999992" dy="-3.9000000000000012">4.1. Quản lý Phim (CRUD)</tspan><tspan x="3477.8689999999992" dy="16.900000000000002">(Thêm, cập nhật, xóa phim)</tspan></text>
+</g>
+<g class="node" data-id="F4_2" data-label="4.2. Quản lý Phòng chiếu (CRUD)
+(Số hàng, số ghế/hàng, hàng VIP)" data-shape="rectangle">
+  <rect x="3602.4259999999995" y="213.60000000000002" width="233.12799999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3718.9899999999993" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="3718.9899999999993" dy="-3.9000000000000012">4.2. Quản lý Phòng chiếu (CRUD)</tspan><tspan x="3718.9899999999993" dy="16.900000000000002">(Số hàng, số ghế/hàng, hàng VIP)</tspan></text>
+</g>
+<g class="node" data-id="F4_3" data-label="4.3. Quản lý Suất chiếu (CRUD)
+(Chặn tạo suất chồng giờ cùng phòng)" data-shape="rectangle">
+  <rect x="3863.5539999999996" y="213.60000000000002" width="258.32199999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="3992.7149999999997" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="3992.7149999999997" dy="-3.9000000000000012">4.3. Quản lý Suất chiếu (CRUD)</tspan><tspan x="3992.7149999999997" dy="16.900000000000002">(Chặn tạo suất chồng giờ cùng phòng)</tspan></text>
+</g>
+<g class="node" data-id="F4_4" data-label="4.4. Thống kê doanh thu
+(Aggregation $group theo phim &amp; ngày)" data-shape="rectangle">
+  <rect x="4149.875999999999" y="213.60000000000002" width="264.991" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="4282.371499999999" y="240.50000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="4282.371499999999" dy="-3.9000000000000012">4.4. Thống kê doanh thu</tspan><tspan x="4282.371499999999" dy="16.900000000000002">(Aggregation $group theo phim &amp; ngày)</tspan></text>
+</g>
+</svg>
