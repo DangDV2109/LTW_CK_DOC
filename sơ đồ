@@ -1,114 +1,96 @@
-<MãNhóm>_LTW_CuoiKy/ (hoặc testweb/)
-├── README.md                           # Hướng dẫn cài đặt, chạy, tài khoản demo 3 vai trò & lệnh chạy seed
-│
-├── client/                             # FRONTEND (React + Vite + React Router + Redux Toolkit)
+testweb2/
+├── README.md                           # Hướng dẫn cài đặt, chạy dự án, tài khoản demo & lệnh chạy seed
+├── client/                             # FRONTEND (React 18 + Vite 6 + React Router 7)
 │   ├── index.html
 │   ├── package.json
 │   ├── vite.config.js
 │   └── src/
-│       ├── assets/                     # [Đã có] Logo PTIT, RIPT, icon bản đồ
+│       ├── api/                        # Cấu hình Axios client & Mock fallback
+│       │   ├── axiosClient.js
+│       │   └── mockAdapter.js
+│       ├── assets/                     # Hình ảnh, logo PTIT, RIPT, icon bản đồ
 │       │   ├── map-icon.png
 │       │   ├── ptit-logo.png
 │       │   └── ript-logo.png
-│       │
-│       ├── components/                 # Tối thiểu 15 Component tái sử dụng (Yêu cầu #3)
-│       │   ├── Header/                 # [Đã có] Header.jsx, Header.css (NavLink active, Search, Theme toggle)
-│       │   ├── Footer/                 # [Đã có] Footer.jsx, Footer.css
-│       │   ├── BodySlider/             # [Đã có] BodySlider.jsx, BodySlider.css (4 Slide trang chủ)
-│       │   ├── MovieCard/              # [Đã có] MovieCard.jsx, MovieCard.css (Thẻ phim)
-│       │   ├── ScheduleSlide/          # [Đã có] ScheduleSlide.jsx, SearchableSelect.jsx (Lịch chiếu)
-│       │   ├── SeatMap/                # [Cần thêm] Sơ đồ ghế sinh động từ dữ liệu phòng
-│       │   │   ├── SeatGrid.jsx        # Lưới ghế (thường, VIP, đã bán)
-│       │   │   ├── SeatItem.jsx        # Ô ghế đơn lẻ
-│       │   │   ├── SeatLegend.jsx      # Chú thích màu ghế
-│       │   │   └── CountdownTimer.jsx  # Đồng hồ đếm ngược 5 phút (setInterval + cleanup)
-│       │   ├── Common/                 # [Cần thêm] Các component dùng chung
-│       │   │   ├── Modal.jsx           # Hộp thoại xác nhận / xem Trailer YouTube
-│       │   │   ├── Pagination.jsx      # Phân trang danh sách
-│       │   │   ├── LoadingSpinner.jsx  # Trạng thái tải dữ liệu
-│       │   │   └── FormInput.jsx       # Controlled input có label & hiển thị lỗi
-│       │   └── Layouts/                # [Cần thêm] Bố cục dùng <Outlet /> (Yêu cầu #5)
-│       │       ├── MainLayout.jsx      # Layout cho Khách & Thành viên (Header + Outlet + Footer)
-│       │       └── AdminLayout.jsx     # Layout quản trị (Sidebar Admin + Outlet)
-│       │
-│       ├── pages/                      # Các màn hình gắn với Route (Yêu cầu #5)
-│       │   ├── HomePage.jsx            # Trang chủ chứa BodySlider 4 slide hiện tại
-│       │   ├── MovieDetailPage.jsx     # Chi tiết phim (/movies/:id - dùng useParams, nhúng Trailer)
-│       │   ├── BookingPage.jsx         # Trang chọn ghế & đặt vé (/booking/:showtimeId)
-│       │   ├── MyBookingsPage.jsx      # Lịch sử vé đã đặt & Hủy vé trước 2 tiếng (/my-bookings)
-│       │   ├── LoginPage.jsx           # Đăng nhập (/login)
-│       │   ├── RegisterPage.jsx        # Đăng ký (/register)
-│       │   ├── NotFoundPage.jsx        # Trang 404 (/404 hoặc *)
-│       │   └── admin/                  # Các trang của Admin (/admin/*)
-│       │       ├── AdminMoviesPage.jsx     # Quản lý phim (CRUD)
-│       │       ├── AdminRoomsPage.jsx      # Quản lý phòng chiếu (hàng, ghế/hàng, hàng VIP)
-│       │       ├── AdminShowtimesPage.jsx  # Quản lý suất chiếu (chống chồng giờ)
-│       │       └── AdminStatsPage.jsx      # Thống kê doanh thu theo phim & ngày
-│       │
-│       ├── context/                    # Context API cho dữ liệu dùng chung (Yêu cầu #6)
-│       │   ├── AuthContext.jsx         # Lưu thông tin user đăng nhập, token JWT, login/logout
-│       │   └── ThemeContext.jsx        # Chế độ giao diện Sáng / Tối (Dark/Light mode)
-│       │
-│       ├── store/                      # Redux Toolkit cho nghiệp vụ chọn ghế (Yêu cầu #6 & Đề 1)
-│       │   ├── index.js                # configureStore
-│       │   └── bookingSlice.js         # createSlice quản lý danh sách ghế đang chọn (tối đa 8 ghế)
-│       │
-│       ├── hooks/                      # Tối thiểu 2 Custom Hooks (Yêu cầu #4)
-│       │   ├── useDebounce.js          # Debounce khi gõ tìm kiếm tên phim
-│       │   ├── useFetch.js             # Gọi API kèm trạng thái loading/error
-│       │   └── useLocalStorage.js      # Đồng bộ state với localStorage (Token, Theme)
-│       │
-│       ├── routes/                     # Cấu hình điều hướng SPA (Yêu cầu #5)
-│       │   ├── AppRoutes.jsx           # Định nghĩa toàn bộ Routes & Nested Routes
-│       │   └── ProtectedRoute.jsx      # Bảo vệ route bằng <Navigate /> theo vai trò (Member/Admin)
-│       │
-│       ├── services/                   # Tầng giao tiếp REST API (async/await)
-│       │   ├── apiClient.js            # Cấu hình Axios / Fetch base URL & gắn JWT Header
-│       │   ├── movieService.js
-│       │   ├── showtimeService.js
-│       │   └── bookingService.js
-│       │
-│       ├── data/                       # [Đã có] Dữ liệu mẫu fallback (moviesData.js, cinemasData.js)
-│       ├── App.jsx
+│       ├── components/                 # Các component giao diện tái sử dụng
+│       │   ├── BodySlider/             # Slider banner trang chủ (BodySlider.jsx, BodySlider.css)
+│       │   ├── Footer/                 # Chân trang (Footer.jsx, Footer.css)
+│       │   ├── Header/                 # Thanh điều hướng & tìm kiếm (Header.jsx, SearchBar.jsx...)
+│       │   ├── MovieCard/              # Thẻ hiển thị phim (MovieCard.jsx, MovieCard.css)
+│       │   ├── PromotionSlide/         # Slider khuyến mãi (PromotionSlide.jsx, PromotionSlide.css)
+│       │   ├── ScheduleSlide/          # Lịch chiếu & chọn rạp (ScheduleSlide.jsx, SearchableSelect.jsx...)
+│       │   ├── Countdown.jsx           # Đồng hồ đếm ngược thời gian giữ ghế
+│       │   ├── ProtectedRoute.jsx      # Bảo vệ route yêu cầu đăng nhập
+│       │   ├── QRTicket.jsx            # Hiển thị mã QR vé điện tử
+│       │   └── SeatMap.jsx             # Sơ đồ chọn ghế phòng chiếu
+│       ├── context/                    # Quản lý trạng thái toàn cục (React Context)
+│       │   ├── AuthContext.jsx         # Trạng thái đăng nhập & thông tin người dùng
+│       │   └── BookingContext.jsx      # Trạng thái luồng đặt vé, chọn ghế & combo
+│       ├── data/                       # Dữ liệu & bộ lọc phim/cụm rạp phía Client
+│       │   ├── cinemasData.js
+│       │   ├── moviesData.js
+│       │   └── movieSelectors.js
+│       ├── pages/                      # Các trang màn hình chính của ứng dụng
+│       │   ├── AllMoviesPage.jsx       # Danh sách phim đang chiếu / sắp chiếu (+ .css)
+│       │   ├── BookingHistory.jsx      # Lịch sử đặt vé của người dùng
+│       │   ├── ComboSelection.jsx      # Trang chọn combo bắp nước
+│       │   ├── CommunityPage.jsx       # Cộng đồng & bình luận phim (+ .css)
+│       │   ├── DemoBooking.jsx         # Trang demo luồng đặt vé
+│       │   ├── Login.jsx               # Trang đăng nhập
+│       │   ├── MovieDetailPage.jsx     # Chi tiết phim, trailer, lịch chiếu & đánh giá (+ .css)
+│       │   ├── NotFoundPage.jsx        # Trang lỗi 404 (+ .css)
+│       │   ├── Payment.jsx             # Trang thanh toán QR (PayOS / VietQR)
+│       │   ├── Profile.jsx             # Thông tin tài khoản cá nhân
+│       │   ├── Register.jsx            # Trang đăng ký tài khoản
+│       │   ├── SearchResultsPage.jsx   # Kết quả tìm kiếm phim (+ .css)
+│       │   ├── SeatSelection.jsx       # Trang chọn ghế theo suất chiếu
+│       │   ├── TicketPricePage.jsx     # Bảng giá vé rạp (+ .css)
+│       │   └── TicketResult.jsx        # Kết quả đặt vé & hiển thị vé điện tử
+│       ├── App.jsx                     # Cấu hình định tuyến (Routes) chính
 │       ├── App.css
-│       ├── main.jsx
+│       ├── main.jsx                    # Điểm khởi chạy React DOM
 │       └── index.css
-│
 └── server/                             # BACKEND (Node.js + Express + MongoDB)
-    ├── .env                            # Biến môi trường: PORT, MONGODB_URI, JWT_SECRET, JWT_EXPIRES_IN
+    ├── .env
+    ├── .env.example
     ├── package.json
-    ├── server.js                       # Điểm khởi chạy ứng dụng (kết nối DB & lắng nghe PORT)
+    ├── playground-1.mongodb.js         # Script truy vấn/kiểm thử nhanh MongoDB
+    ├── README.md                       # Tài liệu chi tiết API & luồng nghiệp vụ Backend
     └── src/
-        ├── app.js                      # Khởi tạo Express, CORS, JSON parser, gắn Routes & Error Middleware
-        ├── config/
-        │   └── db.js                   # Kết nối MongoDB bằng Mongoose
-        │
-        ├── models/                     # Tối thiểu 4 Collection có liên kết (Yêu cầu #8)
-        │   ├── User.model.js           # Collection users (name, email, passwordHash, role: member/admin)
-        │   ├── Movie.model.js          # Collection movies (title, genre, duration, trailerUrl, poster...)
-        │   ├── Room.model.js           # Collection rooms (name, cinema, rows, cols, vipRows[])
-        │   ├── Showtime.model.js       # Collection showtimes (movieId, roomId, startTime, endTime, bookedSeats[])
-        │   └── Booking.model.js        # Collection bookings (userId, showtimeId, seats[], totalPrice, status)
-        │
-        ├── routes/                     # Tách theo tài nguyên, danh từ số nhiều (Yêu cầu #7)
-        │   ├── auth.routes.js          # POST /api/auth/register, POST /api/auth/login, GET /api/auth/me
-        │   ├── movies.routes.js        # GET/POST/PUT/DELETE /api/movies
-        │   ├── rooms.routes.js         # GET/POST/PUT/DELETE /api/rooms
-        │   ├── showtimes.routes.js     # GET/POST/PUT/DELETE /api/showtimes
-        │   └── bookings.routes.js      # GET/POST /api/bookings, PATCH /api/bookings/:id/cancel, GET /api/bookings/stats
-        │
-        ├── controllers/                # Xử lý nghiệp vụ & trả mã trạng thái chuẩn (200, 201, 400, 401, 403, 404, 409, 500)
-        │   ├── auth.controller.js
-        │   ├── movies.controller.js    # Tìm kiếm $regex, lọc $in, phân trang server
-        │   ├── rooms.controller.js
-        │   ├── showtimes.controller.js # Kiểm tra không cho tạo 2 suất chồng giờ cùng phòng
-        │   └── bookings.controller.js  # Chặn đặt trùng ghế (409), hủy trước 2h, Aggregation doanh thu ($group)
-        │
-        ├── middlewares/                # Kiểm tra quyền & xử lý lỗi tập trung (Yêu cầu #7 & #9)
-        │   ├── auth.middleware.js      # Verify JWT token
-        │   ├── role.middleware.js      # Kiểm tra role ('member', 'admin')
-        │   ├── validate.middleware.js  # Kiểm tra dữ liệu đầu vào ở server
-        │   └── error.middleware.js     # Middleware xử lý lỗi tập trung (Centralized Error Handler)
-        │
-        └── seeds/
-            └── seed.js                 # Script khởi tạo dữ liệu mẫu (Admin, Member, 18 Phim, Phòng, Suất chiếu)
+        ├── app.js                      # Khởi tạo Express, CORS, gắn Routes & Error Middleware
+        ├── server.js                   # Điểm khởi chạy server, kết nối DB & dọn đơn hết hạn
+        ├── seed.js                     # Script khởi tạo dữ liệu mẫu (Phim, Combo, Suất chiếu, Admin/User)
+        ├── config/                     # Cấu hình hệ thống
+        │   ├── cinemas.js              # Cấu hình cụm rạp & thời gian giữ ghế
+        │   └── db.js                   # Kết nối MongoDB
+        ├── controllers/                # Xử lý logic nghiệp vụ cho từng phân hệ
+        │   ├── authController.js       # Đăng ký, đăng nhập, lấy thông tin tài khoản
+        │   ├── bookingController.js    # Giữ ghế, nhả ghế, checkout, lịch sử đặt vé
+        │   ├── comboController.js      # CRUD gói combo bắp nước
+        │   ├── movieController.js      # CRUD phim, tìm kiếm, lọc & phân trang
+        │   ├── paymentController.js    # Xử lý webhook PayOS/VietQR & giả lập thanh toán
+        │   ├── reviewController.js     # Đánh giá phim, chấm điểm & lượt thích
+        │   ├── showtimeController.js   # Lấy trạng thái sơ đồ ghế theo suất chiếu
+        │   └── statsController.js      # Thống kê doanh thu theo phim, ngày, cụm rạp (Admin)
+        ├── data/                       # Dữ liệu gốc phục vụ seed database
+        │   ├── cinemasData.js
+        │   └── moviesData.js
+        ├── middleware/                 # Middleware trung gian
+        │   ├── auth.js                 # Xác thực JWT & phân quyền Admin/User
+        │   └── error.js                # Xử lý lỗi tập trung
+        ├── models/                     # Mongoose Schemas / Models
+        │   ├── Combo.js                # Model gói bắp nước
+        │   ├── Movie.js                # Model phim & suất chiếu
+        │   ├── Order.js                # Model đơn hàng đặt vé
+        │   ├── Review.js               # Model bình luận & đánh giá sao
+        │   ├── SeatLock.js             # Model khóa ghế tạm thời chống tranh chấp (Race Condition)
+        │   ├── Ticket.js               # Model vé điện tử & mã QR
+        │   └── User.js                 # Model người dùng & quản trị viên
+        ├── routes/                     # Định tuyến API
+        │   └── index.js                # Tập hợp toàn bộ endpoints (/api/...)
+        └── utils/                      # Các hàm tiện ích hỗ trợ
+            ├── email.js                # Gửi email vé điện tử qua Nodemailer
+            ├── fulfill.js              # Phát hành vé điện tử & sinh mã QR khi thanh toán thành công
+            ├── helpers.js              # Các hàm xử lý chuỗi, mã đơn hàng, phân trang
+            ├── payment.js              # Tích hợp cổng thanh toán PayOS & VietQR
+            └── seats.js                # Khởi tạo sơ đồ ghế & tính giá vé theo hạng ghế
